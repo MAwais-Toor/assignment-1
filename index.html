@@ -3,9 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>First Project</title>
 </head>
 <body>
-    <p>hello world</p>
+     <!-- Headings -->
+     <h1>Welcome to My Basic HTML Webpage</h1>
+     <h2>Subheading Level 2</h2>
+     <h3>Subheading Level 3</h3>
+     <h4>Subheading Level 4</h4>
+     <h5>Subheading Level 5</h5>
+     <h6>Subheading Level 6</h6>
+ 
+     <!-- Paragraphs -->
+     <p>This is a simple paragraph demonstrating the use of HTML tags to create a structured webpage. HTML is the building block of web development.</p>
+ 
+     <!-- Ordered List -->
+     <h2>Ordered List of Topics</h2>
+     <ol>
+         <li>Introduction to HTML</li>
+         <li>HTML Tags</li>
+         <li>Basic Structure</li>
+         <li>Forms and Inputs</li>
+     </ol>
+ 
+     <!-- Unordered List -->
+     <h2>Unordered List of Resources</h2>
+     <ul>
+         <li>W3Schools</li>
+         <li>MDN Web Docs</li>
+         <li>FreeCodeCamp</li>
+         <li>Codecademy</li>
+     </ul>
+ 
+     <!-- Table -->
+     <h2>Basic HTML Tags Table</h2>
+     <table>
+         <tr>
+             <th>Tag</th>
+             <th>Description</th>
+         </tr>
+         <tr>
+             <td>&lt;h1&gt;</td>
+             <td>Main Heading</td>
+         </tr>
+         <tr>
+             <td>&lt;p&gt;</td>
+             <td>Paragraph</td>
+         </tr>
+         <tr>
+             <td>&lt;ul&gt;</td>
+             <td>Unordered List</td>
+         </tr>
+         <tr>
+             <td>&lt;ol&gt;</td>
+             <td>Ordered List</td>
+         </tr>
+     </table>
+ 
+     <!-- Media Elements -->
+     <h2>Image</h2>
+     <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" alt="Sample Image" width="300">
+ 
+     <h2>Video</h2>
+     <video width="320" height="240" controls>
+         <source src="https://cdn.pixabay.com/video/2024/03/10/203646-921832579_large.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+     </video>
+ 
+     <h2>Audio</h2>
+     <audio controls>
+         <source src="./nature-investigation-255161.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+     </audio>
+ 
+     <h2>Embed (Iframe)</h2>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/0HyIda5eub8?si=1bu6jE4DXsR_MYvZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ 
+     <!-- Input Types -->
+     <form action="">
+        <label for="">Name</label>
+        <input type="text" placeholder="Enter your name"><br><br>
+        <label for="">Email</label>
+        <input type="email" placeholder="Enter your name"><br><br>
+        <label for="">Password</label>
+        <input type="password" placeholder="Enter your name"><br><br>
+        <label for="">Date of birth</label>
+        <input type="date"><br><br>
+        <label for="">Web link</label>
+        <input type="url"><br><br>
+        <label for="">Phone</label>
+        <input type="tel"><br><br>
+        <label for="">Range</label>
+        <input type="range" max="200" min="100" step="10"><br>
+        <label for="">Gander</label>
+        <input type="radio"><br>
+        <label for="">I am agree</label>
+        <input type="checkbox"><br>
+        <label for="">Choose color</label>
+        <input type="color"><br>
+        <!-- Select Options in pair form-->
+         <label for="">Choose your city</label>
+         <select name="" id="">
+            <option value="city">Lahore</option>
+            <option value="city">Faisalabad</option>
+            <option value="city">Multan</option>
+            <option value="city">Karachi</option>
+         </select><br>
+         <!-- Select Options in self closing tags -->
+          <label for="">DataList</label>
+           <input list="city" placeholder="Faisalabad"> 
+           <!-- The atribute list of input and atribute id of Datalist will be same words like "city" -->
+          <datalist id="city">
+            <option value="Faisalabad">
+            <option value="Lahore">
+            <option value="Multan">
+            <option value="Karachi">
+            <option value="DG Khan">
+          </datalist><br><br>
+          <!-- Choose file -->
+           <label for="">Add profile pic</label>
+          <input type="file" multiple accept="image/png" value=""><br>
+          <label for="">Add Video</label>
+          <input type="file" multiple accept="video/*" value=""><br>
+          <label for="">Add Files</label>
+          <input type="file" multiple accept=".png .pdf." value="">
+          <!-- "multiple" use for choose mulitiple files -->
+           <!-- "accept" use for file select format -->
+            <!-- "*" use for select all format like "video/*"-->
+             <!-- .PNG .PDF .JPG and etc use for different files -->
+        </form>
 </body>
 </html>
