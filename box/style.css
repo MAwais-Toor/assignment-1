@@ -1,0 +1,129 @@
+
+/* Block 4 */
+.omb{
+    background-color: rgb(229, 255, 0);
+    height: 130px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.boxe1{
+    float: left;
+    background-color: rgb(255, 0, 0);
+    height: 100px;
+    width: 140px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.boxe2{
+    float: left;
+    background-color: rgb(145, 255, 0);
+    height: 100px;
+    width: 1100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+/* Block 2 */
+.smb{
+    
+    
+    background-color: rgb(89, 0, 255);
+    height: 260px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.boxe3{
+    float: left;
+    background-color: aqua;
+    height: 210px;
+    width: 140px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.boxe4{
+    float: left;
+    background-color: rgb(145, 255, 0);
+    height: 210px;
+    width: 1100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.boxe4>img{
+    width: 315px;
+}
+.boxe5{
+    float: left;
+    background-color: rgb(255, 0, 0);
+    height: 50px;
+    width: 115px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.boxe6{
+    float: left;
+    background-color: rgb(145, 255, 0);
+    height: 115px;
+    width: 115px;
+    border: 1px solid black;
+    margin: 10px;
+}
+/* Block 3 */
+.tmb{
+    background-color: rgb(0, 255, 55);
+    height: 500px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.boxe7{
+    float: left;
+    background-color: rgb(255, 0, 0);
+    height: 80%;
+    width: 45%;
+    border: 1px solid black;
+    margin: 10px;
+}
+.boxe8{
+    float: left;
+    background-color: rgb(196, 16, 187);
+    height: 80%;
+    width: 45%;
+    border: 1px solid black;
+    margin: 10px;
+}
+.boxe8>p{
+    text-align: center;
+    font-size: 30px;
+    color:gold;
+}
+/* Block 4 */
+.fmb{
+    background-color: rgb(89, 0, 255);
+    height: 500px;
+    border: 1px solid black;
+    margin: 10px;
+}
+.boxe9{
+    float: left;
+    background-color: rgb(255, 123, 0);
+    height: 80%;
+    width: 31%;
+    border: 1px solid black;
+    margin: 10px;
+}
+.boxe10{
+    float: left;
+    background-color: rgb(255, 0, 0);
+    height: 80%;
+    width: 31%;
+    border: 1px solid black;
+    margin: 10px;
+}
+.boxe11{
+    float: left;
+    background-color: rgb(255, 0, 106);
+    height: 80%;
+    width: 31%;
+    border: 1px solid black;
+    margin: 10px;
+}
