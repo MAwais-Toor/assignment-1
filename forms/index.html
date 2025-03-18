@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .form{
+            background-color: rgb(255, 255, 255);
+            box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            position: relative;
+            top: 100px;
+            left: 35%;
+            border-radius: 20px;
+            padding: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="url"], input[type="tel"], input[type="file"], input[list="city"]{
+
+             width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .gender, .terms {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+        }
+        label {
+            margin-right: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="form">
+        <form action="" class="data">
+            <h2>Label and Input types</h2>
+    <form action="">
+       <label for="">Name</label>
+       <input type="text" placeholder="Enter your name"><br>
+
+       <label for="">Date of birth</label>
+       <input type="date"><br>
+
+       <label for="">Phone</label>
+       <input type="tel" placeholder="Enter your number"><br>
+
+       <label>Gender</label>
+            <div class="gender">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+                <label><input type="radio" name="gender" value="other" required> Other</label>
+            </div>
+
+            <label for="">City</label>
+          <input list="city" placeholder="Faisalabad"> 
+          <!-- The atribute list of input and atribute id of Datalist will be same words like "city" -->
+         <datalist id="city">
+           <option value="Faisalabad">
+           <option value="Lahore">
+           <option value="Multan">
+           <option value="Karachi">
+           <option value="DG Khan">
+         </datalist><br>
+
+         <label for="">Email</label>
+       <input type="email" placeholder="Enter your email"><br>
+
+       <label for="">Password</label>
+       <input type="password" placeholder="Enter your password"><br>
+
+       <label for="">URL</label>
+       <input type="url" placeholder="Enter URL"><br>
+       
+       <!-- Select Options in pair form-->
+        <!-- <label for="">Choose your city</label>
+        <select name="" id="">
+           <option value="city">Lahore</option>
+           <option value="city">Faisalabad</option>
+           <option value="city">Multan</option>
+           <option value="city">Karachi</option>
+        </select><br> -->
+
+        <!-- Select Options in self closing tags -->
+         
+
+         <!-- Choose file -->
+          <label for="">Add profile pic</label>
+         <input type="file" multiple accept="image/png" value=""><br>
+
+         <label for="">Add Video</label>
+         <input type="file" multiple accept="video/*" value=""><br>
+
+         <label for="">Add Files</label>
+         <input type="file" multiple accept=".png .pdf." value=""><br>
+         <!-- "multiple" use for choose mulitiple files -->
+          <!-- "accept" use for file select format -->
+           <!-- "*" use for select all format like "video/*"-->
+            <!-- .PNG .PDF .JPG and etc use for different files -->
+            <div class="terms">
+                <label><input type="checkbox" name="terms" required> I agree to the terms and conditions</label>
+            </div>
+            <button>Register now</button>
+           
+
+        </form>
+    </div>
+</body>
+</html>
