@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .main{
+            width: 80%;
+            background-color: antiquewhite;
+            margin: auto;
+        }
+        .box1, .box2, .box3{
+            margin-top: 10px;
+            padding: 70px;
+            background-color: aqua;
+            border: 1px solid black
+        }
+        .box1{
+            background-color: aqua;
+            /* position: relative;
+            /* setting position Top Bottom Left Right */
+            /* top: 30px;
+            left: 40px; */ 
+            position: sticky;
+            top: 1px;
+            
+        }
+        .box2{
+            /* position: relative; */
+            background-color: rgb(81, 255, 0);
+            /* z-index: 1; Z-index use for up and down content */
+        }
+        .box3{
+            background-color: rgb(183, 0, 255);
+            position: sticky;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    Staic position by default in browser;
+    An element with position: relative; is positioned relative to its normal position.
+    An element with position: fixed; is positioned relative to the viewport;
+    An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+    An element with position: sticky; is positioned based on the user's scroll position.
+    -->
+    <h2>CSS Positions</h2>
+    <div class="main">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>
