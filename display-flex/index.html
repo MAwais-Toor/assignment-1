@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+    .main
+    {
+        width: 500px;
+        height: auto;
+        background-color: rgb(255, 230, 0);
+        height: 200px;
+        display: flex;
+        /* justify-content: space-around; */
+        justify-content: space-evenly;
+        /* flex-direction: column-reverse; */
+        height: 200px;
+        /* align-items: center; */
+        align-items: end;
+        /* align-items: start; */
+        flex-wrap: wrap;
+        /* flex-wrap: nowrap; */
+        flex-wrap: wrap-reverse;
+        
+    }
+    .box1, .box2, .box3, .box4, .box5{
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        color: white;
+    }
+    .box1, .box3, .box5{
+        background-color: rgb(255, 47, 47);
+    }
+    .box2, .box4{
+        background-color: rgb(0, 68, 255);
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">box5</div>
+    </div>
+    <p>if flex direction is Row 
+        <pre>justify cotant work in x-axis or horizantal
+            align-item in y-axis or vertical.
+        </pre>
+    </p>
+    <p>if flex direction is Column 
+        <pre>justify cotant work in y-axis or vertical
+            align-item in x-axis or horizantal.
+        </pre>
+    </p>
+</body>
+</html>
