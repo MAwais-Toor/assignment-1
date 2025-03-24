@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* transform: translate(100px, -50px); */
+            /* transform: translateX(100px); */
+            /* transform: translatey(100px); */
+            /* transform: scale(0.6); size increase and decrease */
+            /* transform: rotate(45deg); */
+            /* transform: rotateX('90deg'); */
+            /* transform: rotateX('9deg'); */
+            transform: skew(15deg);
+            animation: tilt 5s linear infinite;
+
+        }
+        .div:hover{
+            transform: rotate(45deg);
+            /* transition: all 0.5s linear; */
+            /* transition: all 0.5s ease; */
+            /* transition: all 0.5s ease-in; */
+            /* transition: all 0.5s ease-out; */
+            /* transition: all 0.5s ease-in-out; */
+            transition: all 0.5s ease-in-out;
+        }
+        @keyframes tilt{
+            50%{
+                transform: translate(20px, 40px);
+            }
+            100%{
+                transform: skew(20deg, 70deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+
+    </div>
+</body>
+</html>

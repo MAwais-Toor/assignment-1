@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,14 +33,14 @@
         /* .nav_links:nth-last-of-type(2){
             color: red;
          } */
-         /* .nav_links:only-child{
+        /* .nav_links:only-child{
             color: red;
          } */
         /* h2:only-of-type{
             color: red;
              only target one tag 
          }*/
-         /* li:last-of-type{
+        /* li:last-of-type{
             color: red;
         } */
         /* li:empty{
@@ -50,7 +51,7 @@
             color: red;
             border: 1px solid;
         } */
-        :is(.para1, .para2 , .para3) p{
+        /* :is(.para1, .para2 , .para3) p{
             color: red;
             border: 1px solid;
             transition: all 30s ease-in;
@@ -59,13 +60,62 @@
             background-color: rgb(255, 102, 0);
             color: black;
             transition: all 30s ease-in-out;
+        } */
+        a {
+            
+            color: black;
         }
-        
+
+        /* .link1:link {
+            color: blue;
+        } */
+
+        .link1:active {
+            color: aqua;
+        }
+
+        .link1:visited {
+            color: brown;
+        }
+
+        #para:target {
+            color: rgb(255, 0, 0);
+            background-color: yellow;
+        }
+
+        input:focus {
+            background-color: aqua;
+        }
+        input:disabled{
+            color: aliceblue;
+            background-color: brown;
+        }
+        input:checked + label{
+            color: aqua;
+            background-color: brown;
+        }
+        input[type="text"]{
+            background-color: blue;
+        }
+        input[disabled]{
+            background-color: rgb(187, 187, 187);
+        }
+        a[href^="#"]{
+            color: aqua;
+        }
+        a[href$="end"]{
+            color: rgb(162, 226, 43);
+            /* background-color: blue; */
+        }
+        a[href*="#"]{
+            color: crimson;
+        }
     </style>
 </head>
+
 <body>
     <h2>PSEUDO Classes</h2>
-    <div class="para1"><p>This is a paragraph</p></div>
+    <!-- <div class="para1"><p>This is a paragraph</p></div>
     <div class="para2">This is a paragraph</div>
     <div class="para3"><p>This is a paragraph</p></div>
     <ul>
@@ -90,8 +140,85 @@
         <li class="nav_links">Link1</li>
         <li class="nav_links">Link1</li>
         <h2>Lorem, ipsum.</h2>
-    </ul>
-   
+    </ul> -->
+
     <!-- <li class="nav_links">Link2</li> -->
+
+    
+    <a class="link1" href="https://github.com/MAwais-Toor/assignment-1/blob/main/pseudo/index.htm#l">Links</a>
+    <a class="link2" href="https://github.com/MAwais-Toor/assignment-1/blob/main/pseudo/index.html">Links</a>
+    <a class="link3" href="https://www.ppsc.gop.pk/">Links</a>
+    <a class="link4" href="https://github.com/MAwais-Toor/assignment-1/blob/main/pseudo/index.html">Links</a>
+    <!-- Target -->
+    <a class="link1" href="#sd-end">Links</a>
+    <a class="link2" href="#para">Links</a>
+    <a class="link3" href="#para">Links</a>
+    <a class="link4" href="#para">Links</a>
+    <form action="">
+        <input type="text" value="Text here" disabled>
+        <label for="name">Name</label>
+        <input type="email" id="name">
+        <input type="text">
+        <input type="password">
+        <input type="checkbox" id="check">
+        <label for="check">Checkbox done</label>
+    </form>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe voluptas culpa ab illo in eaque, impedit numquam
+        nostrum soluta, distinctio et possimus sed. Similique labore animi molestiae adipisci, et doloribus aliquam.
+        Sunt culpa itaque magni enim ratione animi, possimus, sapiente repellat nihil porro reiciendis deleniti
+        perspiciatis ducimus non odit quia ab quisquam optio sed dicta quibusdam fugiat voluptate. Aperiam nesciunt
+        fugiat aliquam deserunt maxime neque quasi, dolorem optio id a sit voluptatem quo totam laboriosam esse quas
+        natus sapiente impedit? Porro repudiandae reprehenderit, nemo quibusdam ea ab perferendis harum odio quas
+        suscipit ad unde vitae maxime deserunt! Perferendis, ipsa cum. Aut ratione corporis reiciendis rerum dolore.
+        Beatae officia, qui eum aliquid hic quas ut odit ab tempore illo molestiae! Odit nostrum debitis expedita
+        placeat, molestias consectetur quisquam! Reprehenderit accusamus necessitatibus, facilis, ex, ipsum ipsam
+        incidunt vero saepe doloribus ducimus qui voluptatibus fugit iste quasi nobis recusandae sunt. Inventore
+        doloremque assumenda praesentium consequuntur, sapiente sunt! Incidunt perspiciatis distinctio earum iste,
+        cupiditate, omnis ipsa sit excepturi praesentium accusamus quasi libero dolor magnam dignissimos natus placeat
+        minus tempore nemo minima necessitatibus fugit? Cupiditate beatae voluptas ipsa earum vitae deserunt corporis.
+        Error, vero? Quo doloremque ipsum illo velit repellat maxime mollitia earum nobis magni consequatur enim
+        asperiores doloribus tenetur eveniet incidunt rerum, odit saepe obcaecati totam ut voluptas cum? Minus aut
+        voluptatum quo repudiandae cumque accusamus delectus ea perferendis, expedita dolorum excepturi. Rerum dicta
+        temporibus expedita eveniet magni magnam incidunt asperiores suscipit! Voluptate deserunt magnam repudiandae aut
+        saepe officiis quod ex impedit obcaecati reiciendis suscipit consequuntur, quis nostrum modi provident quos
+        harum. Sapiente dicta distinctio magnam pariatur optio vel, a libero placeat voluptates omnis expedita adipisci
+        quo, repellat quia perspiciatis! Eligendi laborum tenetur commodi, quae aperiam officiis excepturi, sint,
+        similique possimus ab saepe. Veniam eos natus atque odio eaque modi blanditiis magni. Asperiores, nostrum rem.
+        Quae, quod aspernatur? Officia amet sit sapiente minus consequuntur atque expedita aliquid obcaecati tempore
+        optio. Quia illo, eligendi atque nihil reprehenderit dignissimos sequi asperiores nobis non culpa id rerum,
+        facilis quibusdam ullam consequuntur quisquam perspiciatis reiciendis. Itaque quisquam voluptatibus ullam
+        impedit? Minima tempora natus inventore repudiandae neque nisi ullam vero, aut nesciunt delectus quam error
+        nobis voluptate voluptates quaerat sunt necessitatibus excepturi accusantium dicta assumenda illo quidem
+        recusandae debitis. Illo quasi at enim eaque ratione perferendis et ad reiciendis? Quam ipsam ex, magni nostrum,
+        rem nam eos laboriosam unde numquam architecto dicta labore, voluptatibus suscipit consectetur ea! Molestiae
+        reprehenderit, magnam dolore distinctio quo nesciunt ex ratione voluptas ab aperiam, eum sit error beatae iure
+        numquam inventore perspiciatis laudantium? Aliquam iste ipsum, nulla dicta ullam dolor, nobis vero maxime libero
+        quia soluta omnis reiciendis adipisci accusamus? Modi dolores molestias nisi cupiditate vel id eos neque
+        excepturi itaque ipsa quo sapiente, delectus doloremque, ut veritatis! Dolor doloribus temporibus ducimus
+        cumque? Quasi sit quae beatae blanditiis a qui debitis minima amet ipsum dignissimos earum aperiam, ab eveniet
+        sunt eaque. Quidem dolorum at reiciendis! Aliquid dolores esse ut totam quisquam nulla praesentium quaerat ullam
+        et inventore, aut excepturi optio odio, eius autem! Porro autem nesciunt, dolores repudiandae incidunt officia
+        dolore consequatur quisquam sapiente, repellendus, aliquam aperiam explicabo! Dolor quibusdam nulla ea
+        molestiae, porro alias obcaecati eligendi deserunt eos dolorum labore distinctio vitae aliquid velit, ex quod
+        quidem impedit amet omnis expedita officiis sequi? Magnam explicabo quibusdam debitis eum ducimus quae provident
+        quod saepe iusto, ipsam sequi earum iste quidem, labore nulla, aspernatur inventore reprehenderit laborum
+        molestiae? Ducimus officiis impedit blanditiis harum eos saepe vero qui in quod provident asperiores explicabo
+        debitis, reiciendis nesciunt dignissimos facere illum iusto rem praesentium accusamus enim ab. Possimus vitae,
+        debitis sed tempore iure iusto sunt! Voluptas obcaecati adipisci debitis, minima soluta consequatur consequuntur
+        delectus facere nam repudiandae perferendis itaque odit ut autem neque ex perspiciatis temporibus eos, cum esse
+        eum laborum, ratione aliquid? Quidem debitis excepturi molestiae voluptas, ab aspernatur fuga placeat quaerat?
+        Quos, facere sapiente voluptatem quas cum delectus laboriosam minima harum sunt qui nihil molestiae autem
+        suscipit deserunt illo magnam ipsam aperiam tenetur. Sint aut officia culpa odio dolore quibusdam cupiditate
+        quis ad qui ea tempore quasi, numquam explicabo eaque iure corporis voluptate nam obcaecati vitae perspiciatis
+        nesciunt illo voluptatibus error provident? Tenetur beatae velit iste amet corporis quisquam ab ipsum ratione.
+        Magnam, deserunt suscipit quo cum sequi esse ipsam quibusdam enim recusandae praesentium voluptates facere?
+        Praesentium cupiditate deleniti facere perspiciatis maiores error voluptate veniam eos? Libero sequi, eius
+        soluta voluptatem corporis pariatur, illo iusto quisquam, ipsam ratione sed officiis quibusdam atque harum et
+        quis impedit aut deserunt</p>
+
+    <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam similique, doloribus corporis
+        voluptatem architecto tempora!</p>
+   
 </body>
+
 </html>
