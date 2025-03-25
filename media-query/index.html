@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        background-color: blue;
+        display: flex;
+        padding: 100px;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        background-color: red;
+        padding: 70px;
+        transition:all 0.5 ease-in-out ;
+    }
+
+    @media(max-width:494px) and (min-width:495px){
+        .container {
+        background-color: rgb(255, 238, 0);
+        display: flex;
+        padding: 100px;
+        gap: 50px;
+        justify-content: center;
+    }
+        .box1,
+        .box2,
+        .box3 {
+            background-color: rgb(0, 255, 221);
+            padding: 30px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+
+</html>
